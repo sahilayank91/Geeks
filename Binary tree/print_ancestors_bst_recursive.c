@@ -47,7 +47,7 @@ int printAncestors(struct node *root,int data){
 		return 1;
 	}
 	
-	if(printAncestors(root->left,data)|| printAncestors(root->right,data)){
+	if(printAncestors(root->left,data)||printAncestors(root->right,data)){
 		printf("%d ",root->data);
 		return 1;	
 	}else return 0;
